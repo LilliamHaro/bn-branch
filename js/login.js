@@ -110,7 +110,7 @@ $(document).ready(function() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      // window.location.href = '../views/feed.html';
+      window.location.href = '../views/profile.html';
       var email = user.email;
       // $('#nombre').text(email)
     } else {
