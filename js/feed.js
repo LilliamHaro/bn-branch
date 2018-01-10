@@ -1,5 +1,5 @@
 // $('#newName').hide();
-
+$('#section-change-name').hide();
 $(document).ready(function() {
   // Inicializando firebase
   var config = {
@@ -25,9 +25,13 @@ $(document).ready(function() {
       var firebasePostREsf = firebase.database().ref('users').child(userCode).child('post');
       firebasePostREsf.on('child_added', function(datasnapshot) {
         var postPublicado = datasnapshot.val();
-        $('#publicado').append('<div class="posts">' + postPublicado + '</div>');
+        $('#publicado').prepend('<div class="posts">' + postPublicado + '</div>');
       });
 
+      $('#show-change-name').on('click', function(event) {
+        $('#section-change-name').show();
+        $('#show-change-name').hide();
+      });
       $('#user-name').on('click', function(event) {
         // $('#newName').show();
         var userName = $('#newName').val();
@@ -35,6 +39,8 @@ $(document).ready(function() {
         $('#username-android').text(userName);
         var firebaseUserREsf = firebase.database().ref('users').child(userCode);
         firebaseUserREsf.child('name').set(userName);
+        $('#section-change-name').hide();
+        $('#show-change-name').show();
       });
 
       // $('#my-icon').on('change', function(event) {
@@ -54,6 +60,7 @@ $(document).ready(function() {
         // creando un nodo hijo y agregandole los nuevos post
         // push le da un identificador unico a lo que agrega
         firebaseRef.child('post').push(newPost);
+        $('#input-post').val('');
       });
 
 

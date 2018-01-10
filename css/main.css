@@ -132,8 +132,8 @@ span{
   border: 1px solid grey;
   padding-top: 1em;
   box-shadow: 2px 2px 5px #999;
-  margin: 1em;
-  width: auto;
+  margin: auto;
+  width: 90%;
   max-width: 994px;
 
 }
@@ -148,5 +148,56 @@ span{
 }
 .color-tranparent {
   color: transparent;
-
+}
+.width-40 {
+  width: 60px;
+  margin-top: 10px;
+}
+.float-rigth {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.logout {
+  border: none;
+  background-color: gray;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 7px;
+}
+.boton-center  {
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  border:none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+.boton-green {
+  width: 80px;
+  margin:auto;
+  text-align: center;
+  border:none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: yellowgreen;
+  margin-top: 10px;
+  margin-left: 45%;
+}
+.posts {
+  margin-left: 5%;
+  border-radius: 5px;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #0040FF;
+  margin-bottom: 5px;
+}
+.input-post {
+  width:100%;
+  margin:auto;
 }
