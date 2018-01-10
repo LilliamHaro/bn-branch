@@ -22,6 +22,7 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
      + Lluvia de ideas.
      + Encuestas a usuarios.
      + Decisión del tipo de RS en base al mayor número de preferencia.(Red Social de Business)
+     + Testeo y prototipado
 
      ![LOGO](assets/images/encuesta.png)
      ![LOGO](assets/images/grafico-rango_de_edades.png)
@@ -42,10 +43,21 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
      + Lluvia de ideas.
      + Maquetado y funcionalidad.
      + Base de datos con firebase.
-     + Usuarios: 
+     + Usuarios:
        - username: vanessa@gmail.com / password: 1234567
        - username: lilliam@gmail.com / password: lilliam
        - Y, se añadirán otros usuarios creados por los autores.
+
+    + Procedicimiento para registrarse/Logearse :   
+      - Los usuarios que no se han registrado no podrán ingresar, es necesario registrarse haciendo click en el botón sign up de la esquina superior derecha (así serán regitrados y sus datos irán a nuestra base de datos en tiempo real).
+
+      - Los botones solo se activarán si se llenan las dos casillas, se ingresa un correo electrónico válido y con contraseña mayor o igual a 6 caracteres.
+
+      - Al logearse los correos y los passwords deben ser iguales al que el usuario ingresó en el momento del registro.
+
+    + Procedimiento de posteo
+     - Los usuarios podran postear informacion que se guardara en el apartado de cada uno de los usurios en nuestra base de datos en tiempo real, la cual no se perderá si se refresca la página.
+
 
    **Etapa de entrega:**
    - *Objetivo:* Vender el producto final a los potenciales usuarios, a través de una presentación.
