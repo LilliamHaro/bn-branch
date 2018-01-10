@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--Import bootstrap css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css" />
+  <!-- main.css-->
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand thumbnail" href="#">
+          <img alt="Brand" class="img-responsive img-circle" src="">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section id="person-profile" class="image-profile container-flex-column">
+    <div class="container-uno-profile">
+      <div id="image-profile" class="container img-responsive col-xs-12 col-sm-6">
+        <div class="row">
+          <img alt="Brand" class="img-responsive center-block img img-circle" src="../assets/images/profile.png">
+        </div>
+      </div>
+      <div id="dates-profile" class="container text-center hidden-xs">
+        <div class="row">
+          <h1 class="text-title dateChange mt-20">NAME</h1>
+          <div class="text-center">
+            <p class="text-proc">Procedencia</p>
+            <!--button modal - personal dates-->
+            <button type="button" class="btn btn-default btn-lg botonF1 col-sm-offset-5 my-Btn" id="">
+              <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="dates-profile" class="container text-center visible-xs">
+        <div class="row">
+          <h3 class="text-title dateChange">NAME</h3>
+          <div>
+            <p class="text-proc">Procedencia</p>
+            <button type="button" class="btn btn-default btn-lg botonF1 col-xs-offset-10 my-Btn" id="my-Btn">
+              <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="post-profile col-xs-12">
+    <div class="container container-dos-profile pad-bot">
+      <div class="row" data-role="navbar">
+        <!-- <h4 class="text-center">Activity</h4> -->
+        <ul class="nav nav-pills">
+          <li role="presentation">
+            <a  href="#informacion">Información</a>
+          </li>
+          <li role="presentation">
+            <a href="#favoritos">Favoritos</a>
+          </li>
+          <li role="presentation">
+            <a href="#post">Post</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div id="informacion" class="tab-pane fade">
+        <h3>Intereses o gustos</h3>
+        <ul>
+          <li class="text-inter"></li>
+        </ul>
+      </div>
+      <div id="favoritos" class="tab-pane fade">
+        <h3>Favoritos</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="post" class="tab-pane fade">
+        <h3>post</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="post">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Modal -->
+    <div class="modal fade my-Modal" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 style="color:red;">
+              <span class="glyphicon glyphicon-lock"></span> Información Personal</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrname">
+                  <span class="glyphicon glyphicon-user"></span> Username</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="psw">
+                  <span class="glyphicon glyphicon-eye-open"></span> Procedencia</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter procedencia">
+              </div>
+              <div class="form-group">
+                <label for="int">
+                  <span class="glyphicon glyphicon-eye-open"></span> Intereses</label>
+                <input type="text" class="form-control" id="int" placeholder="Enter intereses o gustos">
+              </div>
+              <!-- <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" checked>Remember me</label>
+              </div> -->
+              <button id="saved" type="submit" class="btn btn-default btn-success btn-block">
+                <span class="glyphicon glyphicon-off"></span> GUARDAR</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Cancel</button>
+            <!-- <p>Not a member?
+              <a href="#">Sign Up</a>
+            </p>
+            <p>Forgot
+              <a href="#">Password?</a>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="../js/profile.js"></script>
+</body>
+
+</html>
