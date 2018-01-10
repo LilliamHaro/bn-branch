@@ -214,3 +214,28 @@ span{
   width:100%;
   margin:auto;
 }
+.another-user {
+  margin:auto;
+  text-align: center;
+  border:none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #5882FA;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 5px;
+}
+
+.button-follow {
+
+  margin:auto;
+  text-align: center;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #5882FA;
+}
