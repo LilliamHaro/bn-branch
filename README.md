@@ -18,10 +18,10 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
    - *Objetivo:* Decidir el tipo de red social a desarrollar.
    - *Acciones realizadas:*
 
-     Planificación de actividades.
-     Lluvia de ideas.
-     Encuestas a usuarios.
-     Decisión del tipo de RS en base al mayor número de preferencia.(Red Social de Business)
+     + Planificación de actividades.
+     + Lluvia de ideas.
+     + Encuestas a usuarios.
+     + Decisión del tipo de RS en base al mayor número de preferencia.(Red Social de Business)
 
      ![LOGO](assets/images/encuesta.png)
      ![LOGO](assets/images/grafico-rango_de_edades.png)
@@ -42,6 +42,7 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
      + Lluvia de ideas.
      + Maquetado y funcionalidad.
      + Base de datos con firebase.
+     + Usuarios a crear.
 
    **Etapa de entrega:**
    - *Objetivo:* Vender el producto final a los potenciales usuarios, a través de una presentación.

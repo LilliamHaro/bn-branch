@@ -3,6 +3,19 @@
   padding: 0;
   margin: 0;
 }
+.container-splash {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url('../assets/images/imagen-1.jpg');
+}
+#logo {
+  width: auto;
+  max-width: 300px;
+}
+.pd-3 {
+  padding: 3;
+}
 .all-heigth {
   height: 100vh;
 }
