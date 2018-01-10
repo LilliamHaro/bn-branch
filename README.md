@@ -32,23 +32,23 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
    - *Objetivo:* Desarrollar la Red Social de Business, teniendo en cuenta el producto mínimo viable solicitado.
    - *Acciones realizadas:*
 
-     Planificación de actividades según el PMV:
-     - Perfiles de usuarios.
-     - Un newsfeed donde puedes ver las actualizaciones de todos tus contactos.
-     - Un lugar donde poder escribir posts.
-     - Un lugar para subir fotos.
-     - Capacidad para poder tener amigos o para poder seguir a personas/marcas dentro de la red social.
-     - Ser mobile friendly.
-     Lluvia de ideas.
-     Maquetado y funcionalidad.
-     Base de datos con firebase.
+     + Planificación de actividades según el PMV:
+       - Perfiles de usuarios.
+       - Un newsfeed donde puedes ver las actualizaciones de todos tus contactos.
+       - Un lugar donde poder escribir posts.
+       - Un lugar para subir fotos.
+       - Capacidad para poder tener amigos o para poder seguir a personas/marcas dentro de la red social.
+       - Ser mobile friendly.
+     + Lluvia de ideas.
+     + Maquetado y funcionalidad.
+     + Base de datos con firebase.
 
-    **Etapa de entrega:**
+   **Etapa de entrega:**
    - *Objetivo:* Vender el producto final a los potenciales usuarios, a través de una presentación.
    - *Acciones a realizar:*
 
-     Exposición del producto final.
-     Recibir feedback de los potenciales usuarios.
+     + Exposición del producto final.
+     + Recibir feedback de los potenciales usuarios.
 
 3. **Autores:**
 
