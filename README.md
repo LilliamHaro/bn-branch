@@ -42,7 +42,10 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
      + Lluvia de ideas.
      + Maquetado y funcionalidad.
      + Base de datos con firebase.
-     + Usuarios a crear.
+     + Usuarios: 
+       - username: vanessa@gmail.com / password: 1234567
+       - username: lilliam@gmail.com / password: lilliam
+       - Y, se añadirán otros usuarios creados por los autores.
 
    **Etapa de entrega:**
    - *Objetivo:* Vender el producto final a los potenciales usuarios, a través de una presentación.
