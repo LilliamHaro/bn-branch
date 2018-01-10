@@ -16,7 +16,10 @@ $(document).ready(function() {
     if (user) {
       var email = user.email;
       var userCode = user.uid;
+      // cambio
       $('#nombre').text(email);
+      $('#user-email-desktop').text(email);
+      // cambio
       console.log(userCode);
       // referencia al apartado del usuario con sus post
       var firebasePostREsf = firebase.database().ref('users').child(userCode).child('post');
@@ -28,6 +31,8 @@ $(document).ready(function() {
       $('#user-name').on('click', function(event) {
         // $('#newName').show();
         var userName = $('#newName').val();
+        $('#my-name').text(userName);
+        $('#username-android').text(userName);
         var firebaseUserREsf = firebase.database().ref('users').child(userCode);
         firebaseUserREsf.child('name').set(userName);
       });
