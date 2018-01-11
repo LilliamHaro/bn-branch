@@ -91,10 +91,11 @@
   /* justify-content: center; */
   /* padding: 2em; */
 }
+/* Solo cambiando el padiing para que la imagen no se desborde */
 .img {
-  width:100%;
+  width:100%; 
   max-width:200px;
-  padding: 1em;
+  padding: 2em;
   margin: auto;
   display: block;
 }
