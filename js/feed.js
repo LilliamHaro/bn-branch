@@ -63,8 +63,8 @@ $(document).ready(function() {
         $('#input-post').val('');
       });
 
-
-      $('#follow').on('click', function() {
+      /* Cambie el método on, por el método one que hace que solo se produzca una vez el evento click. Recuerda que el método on se utiiza cuando quieres que un evento se produzca varias veces */
+      $('#follow').one('click', function() {
         var firebaseUsers = firebase.database().ref().child('users');
         firebaseUsers.on('child_added', function(datasnapshot) {
           var allUsers = datasnapshot.child('name').val();
