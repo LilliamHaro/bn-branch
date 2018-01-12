@@ -14,13 +14,25 @@
   max-width: 300px;
 }
 .pd-3 {
-  padding: 0 0 2vh;
+  padding: 0;
+}
+.mb-0 {
+  margin-bottom: 0
+}
+.mg-4{
+  margin: 4vh;
+}
+.mgt-20 {
+  margin-top: 20px; 
+}
+.mgl-20{
+  margin-left: 20px;
 }
 .all-heigth {
   height: 100vh;
 }
-.heigth-90 {
-  height: 90vh
+.heigth-75 {
+  height: 75vh
 }
 .height-10 {
   height: 10vh;
@@ -48,6 +60,11 @@
   color: white;
   font-weight: bold;
 }
+.click2 {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
 .corner {
   float: right;
   margin-right: 25px;
@@ -55,6 +72,11 @@
 }
 .corner:hover {
   background-color: #0040FF;
+}
+.fa-google-plus-official {
+  color: #dd4d40;
+  font-size: 25px;
+  text-shadow: 0.5px 0.5px rgb(0, 0, 0);
 }
 .padding-25 {
   padding: 25px;

@@ -7,6 +7,8 @@
 Esta plataforma está orientado hacia los negocios. BN branch es la plataforma perfecta para el modelo de negocio B2B (Business to Business).
 En esta plataforma puedes conocer empresas y gente de tu mismo vertical para crear alianzas o bien, tener contacto con clientes potenciales, informarte con datos actualizados de las principales organizaciones de business.
 
+![LOGO](assets/images/bn-branch1.png)
+![LOGO](assets/images/bn-branch2.png)
 =================================================================================
 
 1. **Objetivo General del proyecto:**
@@ -53,11 +55,13 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
 
        - Los botones solo se activarán si se llenan las dos casillas, se ingresa un correo electrónico válido y con contraseña mayor o igual a 6 caracteres.
 
-       s- Al logearse los correos y los passwords deben ser iguales al que el usuario ingresó en el momento del registro.
+       - Al logearse los correos y los passwords deben ser iguales al que el usuario ingresó en el momento del registro.
 
      + Procedimiento de posteo :
        - Los usuarios podrán postear información que se guardará en el apartado de cada uno de los usuarios en nuestra base de datos en tiempo real, el cual no se perderá si se refresca la página.
 
+     ![IMAGEN APP](assets/images/grafico-sexo.png)
+     ![IMAGEN APP](assets/images/grafico-opciones-redes-sociales.png)
 
    **Etapa de entrega:**
    - *Objetivo:* Vender el producto final a los potenciales usuarios, a través de una presentación.

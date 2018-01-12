@@ -1,5 +1,5 @@
 
-// desabilitando y ocultando botones y secciones antes de que cargue completamente la página
+// deshabilitando y ocultando botones y secciones antes de que cargue completamente la página
 $('#login-text').hide();
 $('#div-name').hide();
 $('#signup-button').hide();
