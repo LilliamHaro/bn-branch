@@ -48,15 +48,15 @@ En esta plataforma puedes conocer empresas y gente de tu mismo vertical para cre
        - username: lilliam@gmail.com / password: lilliam
        - Y, se añadirán otros usuarios creados por los autores.
 
-    + Procedicimiento para registrarse/Logearse :   
-      - Los usuarios que no se han registrado no podrán ingresar, es necesario registrarse haciendo click en el botón sign up de la esquina superior derecha (así serán regitrados y sus datos irán a nuestra base de datos en tiempo real).
+     + Procedimiento para registrarse/ingresar :
+       - Los usuarios que no se han registrado, deben hacer click en el botón sign up de la esquina superior derecha (así serán regitrados y sus datos irán a nuestra base de datos en tiempo real).
 
-      - Los botones solo se activarán si se llenan las dos casillas, se ingresa un correo electrónico válido y con contraseña mayor o igual a 6 caracteres.
+       - Los botones solo se activarán si se llenan las dos casillas, se ingresa un correo electrónico válido y con contraseña mayor o igual a 6 caracteres.
 
-      - Al logearse los correos y los passwords deben ser iguales al que el usuario ingresó en el momento del registro.
+       s- Al logearse los correos y los passwords deben ser iguales al que el usuario ingresó en el momento del registro.
 
-    + Procedimiento de posteo
-     - Los usuarios podran postear informacion que se guardara en el apartado de cada uno de los usurios en nuestra base de datos en tiempo real, la cual no se perderá si se refresca la página.
+     + Procedimiento de posteo :
+       - Los usuarios podrán postear información que se guardará en el apartado de cada uno de los usuarios en nuestra base de datos en tiempo real, el cual no se perderá si se refresca la página.
 
 
    **Etapa de entrega:**
