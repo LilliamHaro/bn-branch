@@ -91,10 +91,11 @@
   /* justify-content: center; */
   /* padding: 2em; */
 }
+/* Solo cambiando el padiing para que la imagen no se desborde */
 .img {
-  width:100%;
+  width:100%; 
   max-width:200px;
-  padding: 1em;
+  padding: 2em;
   margin: auto;
   display: block;
 }
@@ -153,8 +154,10 @@ span{
 .pad-bot {
   padding: 1em 1.5em 1em 1.9em;
 }
+/* Le añadí a esta clase un margin-bottom ya que el nombre está pegado al botón change name, algo que resta al buen diseño de la página */
 .mt-20 {
   margin-top: 100px;
+  margin-bottom: 9px;
 }
 .bg-red {
   background-color:#F44336;
@@ -162,9 +165,13 @@ span{
 .color-tranparent {
   color: transparent;
 }
+/* Esta clase venía por defecto con un height de 50px y la altura de tu logo es de 53px por lo que se terminaba desbordando de su contenedor. Más atentas con esos detalles */
+.navbar-brand {
+  height: auto;
+}
+/* El margin-top era innecesario y era otra razón por la cual el logo se desbordaba de su contenedor */
 .width-40 {
   width: 60px;
-  margin-top: 10px;
 }
 .float-rigth {
   float: right;
@@ -189,6 +196,13 @@ span{
   font-weight: bold;
   text-transform:uppercase;
 }
+/* Esta es clase del contenedor del botón postear al que le añadí display: flex para poder centrar mejor la imagen */
+.boton-green-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Le quité el margin-left porque no centraba bien: cuando el viewport aumentaba, se movía más hacia la izquierda */
 .boton-green {
   width: 80px;
   margin:auto;
@@ -200,7 +214,6 @@ span{
   font-weight: bold;
   background-color: yellowgreen;
   margin-top: 10px;
-  margin-left: 45%;
 }
 .posts {
   margin-left: 5%;
@@ -213,6 +226,10 @@ span{
 .input-post {
   width:100%;
   margin:auto;
+}
+/* Añadí esta clase ya que el borde del input para postear en ciertas ocasiones desparecía una parte */
+.border-color {
+  border: 1px solid gray;
 }
 .another-user {
   margin:auto;
