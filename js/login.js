@@ -14,7 +14,7 @@ $(document).ready(function() {
     authDomain: 'red-social-x.firebaseapp.com',
     databaseURL: 'https://red-social-x.firebaseio.com',
     projectId: 'red-social-x',
-    storageBucket: '',
+    storageBucket: 'red-social-x.appspot.com',
     messagingSenderId: '795353793299'
   };
   firebase.initializeApp(config);
@@ -109,10 +109,10 @@ $(document).ready(function() {
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      // User is signed in.
+      // User is signed in
+      // var name = $('#inputName').val();
+      // localStorage.setItem('userName', name);
       window.location.href = '../views/profile.html';
-      var email = user.email;
-      // $('#nombre').text(email)
     } else {
       console.log('usuario no logeado');
     }

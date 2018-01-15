@@ -9,6 +9,12 @@
   background-size: cover;
   background-image:url('../assets/images/imagen-1.jpg');
 }
+#anotherUserIcon img {
+  max-height: 100%;
+}
+#anotherUserIcon {
+  height: 144px;
+}
 #logo {
   width: auto;
   max-width: 300px;
@@ -23,7 +29,7 @@
   margin: 4vh;
 }
 .mgt-20 {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 .mgl-20{
   margin-left: 20px;
@@ -104,6 +110,9 @@
 .enabled-button {
   background-color: #0040FF;
 }
+.pd-bottom-15 {
+  padding-bottom: 15px;
+}
 /* ------------------------------------------------------- */
 
 /*section image-profile*/
@@ -115,7 +124,7 @@
 }
 /* Solo cambiando el padiing para que la imagen no se desborde */
 .img {
-  width:100%; 
+  width:100%;
   max-width:200px;
   padding: 2em;
   margin: auto;
@@ -234,20 +243,18 @@ span{
   padding: 10px;
   color: white;
   font-weight: bold;
-  background-color: yellowgreen;
+  background-color: #536DFE;
   margin-top: 10px;
 }
 .posts {
-  margin-left: 5%;
-  border-radius: 5px;
-  width: 90%;
+  width: 100%;
   padding: 20px;
-  border: 1px solid #0040FF;
-  margin-bottom: 5px;
+  border-bottom: 2px solid #0040FF;
 }
 .input-post {
-  width:100%;
-  margin:auto;
+  width:90%;
+  margin-left:5%;
+  border-radius: 8px;
 }
 /* Añadí esta clase ya que el borde del input para postear en ciertas ocasiones desparecía una parte */
 .border-color {
@@ -277,4 +284,134 @@ span{
   font-weight: bold;
   margin-top: 10px;
   background-color: #5882FA;
+}
+.text-center {
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #DCEDC8;
+}
+.title-center {
+  text-align: center;
+  line-height: 35px;
+  font-size: 15px;
+  color: #DCEDC8;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.bg-white-dark {
+  background-color:#BDBDBD;
+}
+.bg-soft-green {
+  background-color: #0B2161;
+}
+.bg-soft-soft-green {
+  background: #536DFE;
+}
+.bg-soft-back {
+  background-color:#212121;
+}
+.bg-sky-blu {
+  background-color: #448AFF;
+}
+.bg-gray {
+  background-color: #757575;
+}
+.bg-soft-gray {
+  background-color: #BDBDBD;
+}
+.fz-28 {
+  font-size: 28px;
+}
+.line-heigth-0 {
+  line-height: 0px;
+}
+.line-heigth-12 {
+  line-height: 23px;
+}
+.fz-18 {
+  font-size: 18px;
+}
+.pd-15 {
+  padding: 15px
+}
+.mt-18 {
+  margin-top: 18px;
+}
+.post-center {
+  width: 90%;
+  margin: auto;
+}
+.button-change {
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 18px;
+  height: 28px;
+}
+.upper {
+  text-transform: uppercase;
+}
+.mg-bottom-25 {
+  margin-bottom: 25px;
+}
+.heigth-50 {
+  height: 50px;
+}
+.border-top {
+  border-top: 2px solid #0040FF;
+}
+.image-div {
+  height: 144px;
+}
+.image-div img {
+  max-height: 100%;
+}
+.wrap-break {
+  word-wrap: break-word;
+}
+.posts img {
+  width: 90vw;
+}
+.label {
+  width: 80px;
+  margin:auto;
+}
+.mg-bottom-15 {
+  margin-bottom: 15px;
+}
+.width-100 {
+  width: 100%;
+}
+.width-30 {
+  width: 30%:
+}
+.border-radius {
+  border-radius: 5px;
+}
+.width-70 {
+  width: 70%;
+}
+.pd-sides-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.title-users {
+  color: #757575;
+}
+.texto-center {
+  text-align: center;
+}
+.color-soft-soft-green {
+  color: color: #DCEDC8;;
+}
+.row::after, .row::before {
+  height: 0;
+}
+@media (min-width: 768px) {
+
+  .posts img {
+    width: 400px;
+  }
 }
