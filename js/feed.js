@@ -70,7 +70,18 @@ $(document).ready(function() {
       // guardando nuevos post
       $('#button-post').on('click', function(event) {
         if ($('#input-post').val() && $('#input-post').val() != 0) {
-          var newPost = $('#input-post').val();
+          var fecha = new Date();
+          var hora = fecha.getHours();
+          var minuto = fecha.getMinutes();
+          // condicionales para evitar que las horas y los minutos no aparezcan como unidades
+          if (minuto < 10) {
+            minuto = '0' + minuto;
+          }
+          if (hora < 10) {
+            hora = '0' + hora;
+          }
+          var hours = 'Publicado a las ' + hora + ':' + minuto + ' horas';
+          var newPost = $('#input-post').val() + '<br>' + hours + ' por ' + user.email;
           var firebaseRef = firebase.database().ref('users').child(userCode);
           firebaseRef.child('post').push(newPost);
           $('#input-post').val('');
@@ -82,9 +93,10 @@ $(document).ready(function() {
       firebasePostREsf.on('child_added', function(datasnapshot) {
         var postPublicado = datasnapshot.val();
         var imagePublicada = datasnapshot.child('url').val();
+        var dateImage = datasnapshot.child('date').val();
         if (imagePublicada) {
           var imagePostPublicado = datasnapshot.child('url').val();
-          $('#publicado').prepend('<div class="posts "><img class="" src="' + imagePostPublicado + '"></div>');
+          $('#publicado').prepend('<div class="posts"><img class="" src="' + imagePostPublicado + '"><p>' + dateImage + '</p></div>');
         } else {
           $('#publicado').prepend('<div class="posts">' + postPublicado + '</div>');
         }
@@ -129,17 +141,19 @@ $(document).ready(function() {
       var firebaseUsers = firebase.database().ref().child('users');
       firebaseUsers.on('child_added', function(datasnapshot) {
         var allUsers = datasnapshot.child('name').val();
-        // obteniendo codigo unico de cada usuario
-        var allUsersCode = datasnapshot.ref.key;
-        $('#usuarios').append('<button class="another-user width-100" data-code="' + allUsersCode + '">' + allUsers + '</button>');
-        // $('#usuario').append('<div class="posts">' + allUsers + '</div>');
+        if (allUsers !== null && datasnapshot.child('email').val() !== user.email) {
+          // obteniendo codigo unico de cada usuario
+          var allUsersCode = datasnapshot.ref.key;
+          $('#usuarios').append('<button class="another-user width-100" data-code="' + allUsersCode + '">' + allUsers + '</button>');
+          // $('#usuario').append('<div class="posts">' + allUsers + '</div>');
 
-        $('#usuarios button').on('click', function(event) {
-          var anotherUserPlace = $(this).data('code');
-          // alert(anotherUserPlace);
-          window.localStorage.setItem('another-user-code', anotherUserPlace);
-          window.location.href = '../views/another-user-profile.html';
-        });
+          $('#usuarios button').on('click', function(event) {
+            var anotherUserPlace = $(this).data('code');
+            // alert(anotherUserPlace);
+            window.localStorage.setItem('another-user-code', anotherUserPlace);
+            window.location.href = '../views/another-user-profile.html';
+          });
+        }
       });
 
       // posteando IMAGENES
@@ -161,13 +175,86 @@ $(document).ready(function() {
       };
 
       function createImagePostFirebaseNode(imageName, url) {
+        var fecha = new Date();
+        var hora = fecha.getHours();
+        var minuto = fecha.getMinutes();
+        // condicionales para evitar que las horas y los minutos no aparezcan como unidades
+        if (minuto < 10) {
+          minuto = '0' + minuto;
+        }
+        if (hora < 10) {
+          hora = '0' + hora;
+        }
+        var hours = 'Publicado a las ' + hora + ':' + minuto + ' horas';
         var imagePostRef = firebase.database().ref('users').child(userCode);
         // alert(imagePostRef);
         imagePostRef.child('post').push({
           imageNamePost: imageName,
-          url: url});
+          url: url,
+          date: '<br>' + hours + ' por ' + user.email});
       }
 
+      // api de NT Times
+
+      // obteniendo elementos del dom
+      const btnNY = document.getElementById('search-btn');
+      const searchField = document.getElementById('search-keyword');
+      const nyNews = document.getElementById('ny-news');
+      let searchedForText;
+
+      btnNY.addEventListener('click', function(event) {
+        // preventDefault para el evento submit
+        event.preventDefault();
+        // vaciando el contenedor de articulos por cada nueva busqueda
+        nyNews.innerHTML = '';
+        searchedForText = searchField.value;
+        getNews();
+      });
+
+      function getNews() {
+        // instanciando el objeto XMLHttpRequest para el funcionamiento de ajax
+        const articleRequest = new XMLHttpRequest();
+        // haciendo el pedido de información -no olvidar las comilla para el concatendado de em6-
+        articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=117c28a425a1454c87487ddf839178f7`);
+        // funciones
+        articleRequest.onload = addNews;
+        articleRequest.onerror = handleError;
+        articleRequest.send();
+      }
+      // funcion para manejar los errores
+      function handleError() {
+        console.log('se ha presentado un error');
+      }
+
+      function addNews() {
+        // parseando a json para acceder a su propiedades
+        const data = JSON.parse(this.responseText);
+        const response = data.response.docs;
+        // recooriendo todos los articulo
+        response.forEach(function(article) {
+          // obteniendo propiedades
+          const snippet = article.snippet;
+          const urlArt = article.web_url;
+          const headMain = article.headline.main;
+          // manipulando el dom para mostrar la informacion ordenadamente
+          let div = document.createElement('div');
+          let li = document.createElement('li');
+          let a = document.createElement('a');
+          let h4 = document.createElement('h4');
+          h4.innerText = headMain;
+          li.innerText = snippet;
+          a.innerText = '(Ir al artículo)';
+          a.setAttribute('href', urlArt);
+          a.setAttribute('target', '_blank');
+          li.appendChild(a);
+          div.appendChild(h4);
+          div.appendChild(li);
+          nyNews.appendChild(div);
+          console.log(article);
+        });
+      }
+
+      // -------------------------
       console.log(email);
     } else {
       // No user is signed in.

@@ -48,10 +48,12 @@ firebase.auth().onAuthStateChanged(function(user) {
     var firebaseUsers = firebase.database().ref().child('users');
     firebaseUsers.on('child_added', function(datasnapshot) {
       var allUsers = datasnapshot.child('name').val();
-      // obteniendo codigo unico de cada usuario
-      var allUsersCode = datasnapshot.ref.key;
-      $('#usuarios').append('<button class="another-user width-100" data-code="' + allUsersCode + '">' + allUsers + '</button>');
-      // $('#usuario').append('<div class="posts">' + allUsers + '</div>');
+      if (allUsers !== null && datasnapshot.child('email').val() !== user.email) {
+        // obteniendo codigo unico de cada usuario
+        var allUsersCode = datasnapshot.ref.key;
+        $('#usuarios').append('<button class="another-user width-100" data-code="' + allUsersCode + '">' + allUsers + '</button>');
+        // $('#usuario').append('<div class="posts">' + allUsers + '</div>');
+      }
 
       $('#usuarios button').on('click', function(event) {
         var anotherUserPlace = $(this).data('code');

@@ -5,7 +5,7 @@ $('#div-name').hide();
 $('#signup-button').hide();
 $('#signup-button').prop('disabled', true);
 $('#login-button').prop('disabled', true);
-
+$('#a-login').hide()
 
 $(document).ready(function() {
   // Inicializando firebase
@@ -60,20 +60,24 @@ $(document).ready(function() {
     activeFinalButton();
   });
 
-  $('#signup-enter').on('click', function() {
+  $('.sign-up').on('click', function() {
     $('#login-button').hide();
     $('#signup-text').hide();
     $('#signup-button').show();
     $('#login-text').show();
     $('#div-name').show();
+    $('#a-sign-up').hide()
+    $('#a-login').show()
   });
 
-  $('#login-enter').on('click', function() {
+  $('.login').on('click', function() {
     $('#login-button').show();
     $('#signup-text').show();
     $('#signup-button').hide();
     $('#login-text').hide();
     $('#div-name').hide();
+    $('#a-sign-up').show()
+    $('#a-login').hide()
   });
 
   // registrando un usuario nuevo en la base de datos
@@ -104,6 +108,17 @@ $(document).ready(function() {
         $('#inputPassword').val('');
         alert(errorMessage);
       }
+    });
+  });
+
+  // autenticando al usuario con google
+  var provider = new firebase.auth.GoogleAuthProvider();
+  $('#login-gmail').on('click', function() {
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+      // The signed-in user info.
+      var user = result.user;
+      console.log(user);
+      // ...
     });
   });
 

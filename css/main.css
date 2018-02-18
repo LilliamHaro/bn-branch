@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Asul', sans-serif;
 }
 .container-splash {
   background-position:center;
@@ -80,13 +81,16 @@
   background-color: #0040FF;
 }
 .fa-google-plus-official {
-  color: #dd4d40;
+  color: white;
   font-size: 25px;
   text-shadow: 0.5px 0.5px rgb(0, 0, 0);
 }
 .padding-25 {
   padding: 25px;
   border-radius: 5px;
+}
+.red-btn {
+  background-color: #dd4d40;
 }
 .blue-bg {
   background-color: #2E64FE;
@@ -95,7 +99,7 @@
   background-color: gray;
 }
 .white-bg {
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color: rgba(0, 0, 0, 0.9)
   /* border: 1px solid black; */
 }
 .bg-image{
@@ -249,7 +253,25 @@ span{
 .posts {
   width: 100%;
   padding: 20px;
-  border-bottom: 2px solid #0040FF;
+  border-radius: 4px;
+  border: 1px solid #0040FF;
+  background-color: #f7f7f7;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+.input-NY {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+#ny-news > div {
+  background-color: white;
+  padding: 18px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+#ny-news li {
+  list-style: none;
 }
 .input-post {
   width:90%;
@@ -271,7 +293,18 @@ span{
   background-color: white;
   margin-left: 5px;
 }
-
+.btn-seguir {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 5px;
+}
+.bord {
+  border-radius: 5px;
+  border: 1px solid #5882FA;
+  margin-bottom: 10px;
+}
 .button-follow {
 
   margin:auto;
@@ -289,26 +322,32 @@ span{
   text-align: center;
   line-height: 50px;
   font-size: 20px;
-  color: #DCEDC8;
+  color: black;
 }
 .title-center {
   text-align: center;
   line-height: 35px;
   font-size: 15px;
-  color: #DCEDC8;
+  color: black;
 }
 .flex-center {
   display: flex;
   justify-content: center;
 }
 .bg-white-dark {
-  background-color:#BDBDBD;
+  background-color:#e6ecf0;
+}
+.pd-top-20 {
+  padding-top: 20px;
+}
+.bg-rgba{
+  background: rgba(0, 0, 0, 0.5);
 }
 .bg-soft-green {
-  background-color: #0B2161;
+  background-color:#f7f7f7;
 }
 .bg-soft-soft-green {
-  background: #536DFE;
+  background:#53a4ce;
 }
 .bg-soft-back {
   background-color:#212121;
@@ -323,7 +362,7 @@ span{
   background-color: #BDBDBD;
 }
 .fz-28 {
-  font-size: 28px;
+  font-size: 24px;
 }
 .line-heigth-0 {
   line-height: 0px;
@@ -372,7 +411,14 @@ span{
   word-wrap: break-word;
 }
 .posts img {
-  width: 90vw;
+  width: 80vw;
+}
+.blue {
+  color: blue;
+}
+.blue:hover {
+  cursor: pointer;
+  font-weight: bold;
 }
 .label {
   width: 80px;
