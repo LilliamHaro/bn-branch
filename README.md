@@ -1,8 +1,6 @@
 # BN branch
 
-## RED SOCIAL DE EMPRENDIMIENTO
-
-Esta plataforma está orientado hacia personas emprendedoras que desean estar informadas de la actualidad y conectarse con personas que aporten a sus proyecto de emprendimiento
+Esta plataforma está orientado hacia personas emprendedoras que desean estar informadas de la actualidad y hacer conecciones con personas que aporten a sus proyecto de emprendimiento. La red social se implementó con Firebase y cuenta con persistencia de data y autenticación por gmail.
 
 ![vista](assets/images/principal.png)
 
