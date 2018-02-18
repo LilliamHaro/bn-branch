@@ -1,14 +1,13 @@
-![LOGO](assets/images/logo1.png)
-
 # BN branch
 
-## RED SOCIAL DE BUSINESS
+## RED SOCIAL DE EMPRENDIMIENTO
 
-Esta plataforma está orientado hacia los negocios. BN branch es la plataforma perfecta para el modelo de negocio B2B (Business to Business).
-En esta plataforma puedes conocer empresas y gente de tu mismo vertical para crear alianzas o bien, tener contacto con clientes potenciales, informarte con datos actualizados de las principales organizaciones de business.
+Esta plataforma está orientado hacia personas emprendedoras que desean estar informadas de la actualidad y conectarse con personas que aporten a sus proyecto de emprendimiento
 
-![LOGO](assets/images/bn-branch1.png)
-![LOGO](assets/images/bn-branch2.png)
+![vista](assets/images/principal.png)
+
+## DESARROLLADO PARA LABORATORIA
+
 =================================================================================
 
 1. **Objetivo General del proyecto:**
