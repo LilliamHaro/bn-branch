@@ -2,7 +2,7 @@
 
 Esta plataforma está orientado hacia personas emprendedoras que desean estar informadas de la actualidad y hacer conecciones con personas que aporten a sus proyecto de emprendimiento. La red social se implementó con Firebase y cuenta con persistencia de data y autenticación por gmail.
 
-![vista](assets/images/principal.png)
+![bn](https://user-images.githubusercontent.com/32288575/36438568-57574ee8-1638-11e8-9d58-c24f67a5b4bf.png)
 
 ## DESARROLLADO PARA LABORATORIA
 
