@@ -4,7 +4,7 @@ Esta plataforma está orientada hacia personas emprendedoras que desean estar in
 
 ![bn](https://user-images.githubusercontent.com/32288575/36438568-57574ee8-1638-11e8-9d58-c24f67a5b4bf.png)
 
-## DESARROLLADO PARA LABORATORIA
+## Desarrollado para [Laboratoria](http://laboratoria.la)
 
 =================================================================================
 
